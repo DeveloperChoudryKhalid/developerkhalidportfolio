@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Khalid Hussain</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+</head>
+<body>
+    <header>
+        {% include 'menu.html' %}
+    </header>
+
+    <main>
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <div class="profile-card">
+                <img src="{% static 'images/khalid12.jpg' %}" alt="Profile Picture">
+                <h2>Khalid Hussain</h2>
+                <p>A Full Stack Developer based in Italia</p>
+            </div>
+            <div class="featured">
+                <p><strong>FEATURED:</strong> Currently working on <em>"Food at Door"</em> food delivery app (backend: Django).</p>
+            </div>
+        </section>
+
+        <!-- Main Content Grid -->
+        <section class="content-grid">
+            <div class="content-card">
+                <h3>Credentials</h3>
+                <img src="{% static 'images/signature.jpg' %}" alt="Credentials">
+            </div>
+            <div class="content-card">
+                <h3>Projects</h3>
+                <img src="{% static 'images/project list.jpg' %}" alt="Projects">
+            </div>
+            <div class="content-card">
+                <h3>Services Offering</h3>
+                <p>BackEnd Development, FrontEnd Development, Database Programming, Software Architect</p>
+            </div>
+            <div class="content-card">
+                <h3>Profiles</h3>
+                <img src="{% static 'images/khalid12.jpg' %}" alt="Profiles">
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="statistics">
+            <div class="stat-card">
+                <h3>10</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-card">
+                <h3>+6</h3>
+                <p>Companies to Work</p>
+            </div>
+            <div class="stat-card">
+                <h3>+15</h3>
+                <p>Total Projects</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h3>Contact Details</h3>
+        </section>
+    </main>
+
+    {% include 'footer.html' %}
+</body>
+</html>

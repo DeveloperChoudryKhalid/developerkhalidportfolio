@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Khalid Hussain</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+</head>
+<body>
+    <header>
+        {% include 'menu.html' %}
+    </header>
+
+    <main>
+        <section class="contact-header">
+            <h1>Contact Details</h1>
+        </section>
+
+        <section class="contact-info">
+            <div class="info-block">
+                <h3>Contact Info</h3>
+                <div class="info-item">
+                    <span class="icon">📧</span>
+                    <p>
+                        <strong>Mail Me:</strong><br>
+                        developerkhalid@gmail.com<br>
+                        geniouskhalid@gmail.com
+                    </p>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📞</span>
+                    <p>
+                        <strong>Contact Me:</strong><br>
+                        +393475343953
+                    </p>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <p>
+                        <strong>Location:</strong><br>
+                        Via Nino Bixio No. 43<br>
+                        Montalbano Jonico Province Matera region<br>
+                        Basilicata Italy
+                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d16.616667!3d40.366667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDIyJzAwLjAiTiAxNsKwMzcnMDAuMCJF!5e0!3m2!1sen!2sit!4v1234567890"
+                        width="300"
+                        height="200"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+
+            <div class="social-info">
+                <h3>Social Info</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="{% static 'images/facebook-icon.png' %}" alt="Facebook"></a>
+                    <a href="#"><img src="{% static 'images/instagram-icon.png' %}" alt="Instagram"></a>
+                    <a href="#"><img src="{% static 'images/github-icon.png' %}" alt="GitHub"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'Footer.html' %}
+</body>
+</html>

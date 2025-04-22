@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Offerings - Khalid Hussain</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/MyOffering.css' %}">
+</head>
+<body>
+    <header>
+        {% include 'menu.html' %}
+    </header>
+
+    <main>
+        <!-- Sidebar Section -->
+        <section class="sidebar">
+            <ul>
+                <li>BackEnd Development</li>
+                <li>FrontEnd Development</li>
+                <li>DataBase Programming</li>
+                <li>Software Architect</li>
+            </ul>
+        </section>
+
+        <!-- Main Content Section -->
+        <section class="main-content">
+            <h1>✳ MY OFFERINGS ✳</h1>
+            <div class="offerings-grid">
+                <div class="offering-card">
+                    <h3>BACKEND DEVELOPMENT</h3>
+                    <p>Working as a BackEnd programmer. Work with various programming languages such as Python, C#, ASP.net, PHP, and JavaScript and is proficient in frameworks like .Net Framework, Django, WordPress, Laravel. Focuses on the server-side script, develop APIs, and business logic while developing Desktop, Mobile as well as web applications. Ensuring server security and performance optimization. Ensuring seamless data processing and functionality.</p>
+                </div>
+                <div class="offering-card">
+                    <h3>FRONTEND DEVELOPMENT</h3>
+                    <p>Proficient in HTML, CSS, and JavaScript, and often use frameworks and libraries such as Django, .NetFramework, WordPress, Laravel to build dynamic and responsive interfaces. Ensure to implement UI/UX design principles, optimizing cross-browser compatibility, and ensuring mobile responsiveness.</p>
+                </div>
+                <div class="offering-card">
+                    <h3>DATABASE PROGRAMMER</h3>
+                    <p>Proficient in various Query languages and tools like SQL, Django ORM, SQLAlchemy used to interact with databases and data structures. Specialize in working with DBMS like SQL Server, MySQL, and SQLite.</p>
+                </div>
+                <div class="offering-card">
+                    <h3>SOFTWARE ARCHITECTURE</h3>
+                    <p>Proficient in using tools like UML and MS Visio for creating architectural diagrams and models. Ensure that the developed system is scalable, efficient, and aligned with business goals.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'footer.html' %}
+</body>
+</html>

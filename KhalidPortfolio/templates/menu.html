@@ -1,0 +1,15 @@
+<nav>
+    <ul class="navbar">
+        <li><a href="/About/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/credentials/">Credentials</a></li>
+        <li>{% if request.path == '/' %}
+            <a href="#" class="active">Home</a>
+        {% else %}
+            <a href="/Home/">Home</a>
+        {% endif %}</li>
+        <li><a href="/MyOffering/">Service</a></li>
+        <li><a href="/WorkDetails/">Projects Details</a></li>
+        <li><a href="/ProjectList/">All Major Projects</a></li>
+    </ul>
+</nav>

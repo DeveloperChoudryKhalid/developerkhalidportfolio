@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects - Khalid Hussain</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ProjectList.css' %}">
+</head>
+<body>
+    <header>
+        {% include 'menu.html' %}
+    </header>
+
+    <main>
+        <!-- Title Section -->
+        <section class="title-section">
+            <h1>✳ ALL PROJECTS ✳</h1>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-grid">
+            <div class="project-card">
+                <img src="{% static 'images/project-placeholder.jpg' %}" alt="Project 1">
+                <h3>Sastaticket.pk</h3>
+                <p>Python (Frontend & Backend) Developer</p>
+            </div>
+            <div class="project-card">
+                <img src="{% static 'images/project-placeholder.jpg' %}" alt="Project 2">
+                <h3>University of Gujrat Fine Arts Dept.</h3>
+                <p>.NET Developer (ASP.NET MVC, C#)</p>
+            </div>
+            <div class="project-card">
+                <img src="{% static 'images/project-placeholder.jpg' %}" alt="Project 3">
+                <h3>SMS (GHS Kotli Kohala)</h3>
+                <p>Frontend & Backend Developer (PHP, MySQL, CSS, HTML)</p>
+            </div>
+            <div class="project-card">
+                <img src="{% static 'images/project-placeholder.jpg' %}" alt="Project 4">
+                <h3>SuperMeal Food Order & Delivery</h3>
+                <p>WordPress Framework</p>
+            </div>
+            <div class="project-card">
+                <img src="{% static 'images/project-placeholder.jpg' %}" alt="Project 5">
+                <h3>ERP System for Sparco Paint</h3>
+                <p>.NET Developer (C#, SQL Server)</p>
+            </div>
+            <div class="project-card">
+                <img src="{% static 'images/project-placeholder.jpg' %}" alt="Project 6">
+                <h3>Pizza Order & Delivery</h3>
+                <p>WordPress, PHP, MySQL</p>
+            </div>
+        </section>
+    </main>
+
+    {% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Khalid Hussain</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/About.css' %}">
+</head>
+<body>
+    <header>
+        {% include 'menu.html' %}
+    
+    </header>
+
+    <main>
+        <section class="self-summary">
+            <div class="profile">
+                <img src="{% static 'images/khalid12.jpg' %}" alt="Profile Picture">
+            </div>
+            <div class="summary">
+                <h1>SELF-SUMMARY</h1>
+                <h2>Khalid Hussain</h2>
+                <p>I am an IT-driven Backend and Frontend Developer with a focus on web, desktop, and web app development and design. I have a diverse range of experience handling various verticals and industries.</p>
+            </div>
+        </section>
+
+        <section class="details">
+            <div class="experience">
+                <h3>EXPERIENCE</h3>
+                <p><strong>2023 - 2025:</strong> Backend Developer (Python, SQL, Django)</p>
+                <p><strong>2020 - 2023:</strong> Backend & Frontend Developer (C#, SQL Server)</p>
+                <p><strong>2018 - 2020:</strong> Backend Developer (ASP.Net, ASP.Net MVC, C#, SQL Server)</p>
+            </div>
+            <div class="education">
+                <h3>EDUCATION</h3>
+                <p><strong>BS(Hons) in Computer Science</strong></p>
+            </div>
+        </section>
+
+        <section class="contact-credentials">
+            <div class="contact">
+                <h3>Contact Details</h3>
+                <p>Email: developerkhalid@gmail.com</p>
+                <p>Phone: +393475343953</p>
+            </div>
+            <div class="credentials">
+                <h3>Credentials</h3>
+                <img src="static/images/credentials.jpg" alt="Credentials">
+            </div>
+        </section>
+    </main>
+
+   {% include 'Footer.html' %}
+</body>
+</html>

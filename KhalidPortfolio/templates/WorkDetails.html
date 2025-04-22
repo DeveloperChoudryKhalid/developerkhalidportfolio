@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Details - Khalid Hussain</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/WorkDetails.css' %}">
+</head>
+<body>
+    <header>
+        {% include 'menu.html' %}
+    </header>
+
+    <main>
+        <!-- Section 1 -->
+        <section class="work-section">
+            <div class="work-description">
+                <p>Using Python (Django, APIs) | Work on "Buses Reservation" module of one of the core projects of Arbisoft. This project includes web and mobile application development.</p>
+            </div>
+            <div class="work-image">
+                <img src="{% static 'images/work1.jpg' %}" alt="Work 1">
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="work-section">
+            <div class="work-grid">
+                <div class="work-card">
+                    <h3>Backend Development Using Python</h3>
+                    <p>Created server-side logic for handling requests, processing data, and managing databases. Designed database schemas and wrote SQL queries using SQLAlchemy and Django ORM.</p>
+                </div>
+                <div class="work-card">
+                    <h3>About</h3>
+                    <p>Sastaticket.pk is a Pakistan-based project providing services for airline and bus ticket reservations. It also includes visa services for selected countries.</p>
+                </div>
+            </div>
+            <div class="work-image">
+                <img src="{% static 'images/work2.jpg' %}" alt="Work 2">
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="work-section">
+            <div class="work-grid">
+                <div class="work-card">
+                    <p>Used .Net Framework 4.8 (C#, SQL Server 2019) to develop ERP systems for Sparco Paint Company. Worked on both frontend (Windows Forms) and backend (business logic).</p>
+                    <img src="{% static 'images/work3.jpg' %}" alt="Work 3">
+                </div>
+                <div class="work-card">
+                    <p>Developed SMS systems for GHS Kotli Kohala using PHP, MySQL, CSS, and HTML. This system was used for managing school operations.</p>
+                    <img src="{% static 'images/work4.jpg' %}" alt="Work 4">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="work-section">
+            <div class="work-grid">
+                <div class="work-card">
+                    <p>Worked as a WordPress developer for Zilon International Inc. Developed a food delivery web application named "SuperMeal".</p>
+                    <img src="{% static 'images/work5.jpg' %}" alt="Work 5">
+                </div>
+                <div class="work-card">
+                    <p>Developed a pizza ordering system for Jalal & Sons using WordPress, PHP, and JavaScript. This system handled online orders and deliveries.</p>
+                    <img src="{% static 'images/work6.jpg' %}" alt="Work 6">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'footer.html' %}
+</body>
+</html>
